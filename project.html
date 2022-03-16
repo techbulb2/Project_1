@@ -10,12 +10,12 @@
 <body>
     <div class="form-container">
         <h1>sign in</h1>
-        <form action="submit">
+        <form id="my-form" name="myForm" action="submit">
             <div class="input">
-                <input type="text" id="firstname" placeholder="First Name">
+                <input type="text" name="name" id="firstname" value="name" placeholder="First Name">
             </div>
             <div class="input">
-                <input type="text" id="lastname" placeholder="Last Name">
+                <input type="text" name="name" id="lastname" value="name" placeholder="Last Name">
             </div>
             <div class="input">
                 <input type="number" name="age" id="age" placeholder="Input Your Age..">
@@ -32,8 +32,13 @@
             <div class="input">
                 <input type="password" name="password" id="password" placeholder="Confirm Password">
             </div>
+           
+            <div class="input">
+                <input type="submit" name="submit" id="submit" value="submit">
+            </div>
+
         </form>
-        <button class="btn-btn"><a href="#">submit</a></button>
+
     </div>
     <script src="./assets/javaScript/app.js"></script>
 </body>
