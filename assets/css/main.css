@@ -2,13 +2,20 @@
     --background-color-1: rgba(0, 0, 0, 0.075);
     --background-color-2: rgba(255, 255, 255, 0.87);
     --background-color-3: rgb(207, 123, 38);
-   
+    --background-color-4: rgba(247, 181, 137, 0.349);
+    --background-color-5: rgba(205, 134, 63, 0.596);
+    --background-color-6: rgba(0, 0, 0, 0.171);
+    
+    
     --radius: 2rem;
     --radius-1: 1rem;
+
+
     --color-1: rgb(243, 240, 240);
     --color-2: rgb(248, 184, 120);
     --color-3: rgb(248, 135, 21);
-    
+    --color-4: rgba(7, 7, 7, 0.945);
+    --color-5: rgb(7, 7, 243);
     
 }
 
@@ -34,16 +41,18 @@ body {
 #drop {
     padding-top: 2rem;
     padding-bottom: 2.8rem;
-    background-color: rgba(205, 134, 63, 0.596);
+    background-color: var(--background-color-5);
 }
 
 .form-container {
     max-width: 40%;
-    margin: 3rem auto;
+    margin: 1rem auto;
+    /* margin-top: 1rem; */
     /* border: 1px solid grey; */
     padding: 2rem;
+    padding-bottom: 6rem;
     background-color: var(--background-color-1);
-    background-color: rgba(0, 0, 0, 0.171);
+    background-color: var(--background-color-6);
     border-radius: var(--radius);
     box-shadow:  -.08rem .2rem .5rem .1rem rgba(0,0,0,0.5);
     backdrop-filter: blur(10px);
@@ -66,8 +75,6 @@ h1 {
     width: 100%;
     font-size: 2rem;
     background-color: var(--background-color-3);
-
-    
     margin-top: 1.5rem;
     border: none;
     border-radius: var(--radius-1);
@@ -77,21 +84,35 @@ h1 {
     cursor: pointer;
 }
 
+#submit:focus {
+    color: var(--color-5);
+}
+
 .all {
     width: 100%;
     /* height: 4rem; */
     position: relative;
     padding-right: 2rem;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1.6rem;
     padding-left: 4rem;
     font-size: 2rem;
     margin-top: 1.5rem;
-    border: none;
+    border:2px solid transparent;
+    /* border-bottom: 2px transparent; */
     border-radius: var(--radius-1);
     outline: none;
     color: var(--color-2);
     background-color: var(--background-color-2);
+}
+
+.all:hover {
+    background-color: var(--background-color-4);
+}
+
+.all:focus {
+    background-color: var(--background-color-2);
+    border-bottom: 2px solid rgb(66, 34, 3);
 }
 
 i {
@@ -100,5 +121,50 @@ i {
     padding-top: 3.5rem;
     font-size: 2rem;
     color: var(--color-2);
+}
+
+
+.para, .anchor {
+    float: left;
+    font-size: 2rem;
+}
+
+.para {
+    text-align: right;
+    width: 80%;
+    color: var(--color-2);
+}
+
+p {
+    padding-bottom: 2rem;
+    margin: 0;
+    padding-top: 2rem;
+}
+
+.anchor {
+    width: 20%;
+    padding-top: 2rem;
+    text-align: right;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-3);
+    padding-left: 0;
+}
+
+a:hover {
+    color: var(--color-2);
+}
+
+a:focus {
+    color: var(--color-5);
+}
+
+.clearfix {
+    display: block;
+    clear: both;
+    content: "";
 }
 
