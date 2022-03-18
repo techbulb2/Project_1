@@ -21,7 +21,7 @@ html {
 body {
     box-sizing: border-box;
     margin: 0;
-    background-image: url("../images/img1.jpg"), url("../images/img2.jpg"), url("../images/img3.jpg");
+    background-image: url("../images/img1.jpg");
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
@@ -34,8 +34,10 @@ body {
     /* border: 1px solid grey; */
     padding: 2rem;
     background-color: var(--background-color-1);
+    background-color: rgba(0, 0, 0, 0.171);
     border-radius: var(--radius);
     box-shadow:  -.08rem .2rem .5rem .1rem rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
 }
 
 h1 {
@@ -51,6 +53,7 @@ input {
     height: 3rem;
     position: relative;
     padding: 2rem;
+    padding-left: 3rem;
     font-size: 1.5rem;
     margin-top: 1.5rem;
     border: none;
@@ -59,7 +62,7 @@ input {
     color: var(--color-2);
 }
 
-.input i {
+i {
     position: absolute;
     left: 15px;
     padding-top: 15px;

@@ -1,20 +1,20 @@
-var myForm = document.forms.myForm;
-var message = document.getElementById("message");
+// var myForm = document.forms.myForm;
+// var message = document.getElementById("message");
 
-myForm.onsubmit = function(){
-    if(myForm.name.value == ""){
-        message.innerHTML = "please enter a name";
-        return false;
-    }else{
-        message.innerHTML = "";
-        return true;
-    }
+// myForm.onsubmit = function(){
+//     if(myForm.name.value == ""){
+//         message.innerHTML = "please enter a name";
+//         return false;
+//     }else{
+//         message.innerHTML = "";
+//         return true;
+//     }
 
-};
+// };
 
 
-var imageChanger = document.getElementsById("body");
-var image = ["../images/img1.jpg", "../images/img2.jpg", "../images/img3.jpg"];
+var body = document.getElementById("body");
+var image = ["./assets/images/img1.jpg", "./assets/images/img2.jpg", "./assets/images/img3.jpg"];
 var counter = 0;
 
 function imageChanger(){
@@ -23,7 +23,10 @@ function imageChanger(){
         counter = 0;
     };
 
-    imageChanger.style.background = image[counter];
-    counter ++;
-    setInterval("imageChanger", 3000);
+    body.style = `background-image: url(${image[counter]});`
+    // body.style.backgroundImage = `url(${image[counter]});`;
+    counter++;
+
+    console.log(body.style.backgroundImage);
 };
+setInterval(imageChanger, 4000);
