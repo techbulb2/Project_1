@@ -13,20 +13,21 @@
 // };
 
 
-var body = document.getElementById("body");
-var image = ["./assets/images/img1.jpg", "./assets/images/img2.jpg", "./assets/images/img3.jpg"];
-var counter = 0;
+// var body = document.getElementById("body");
+// var image = ["./assets/images/img1.jpg", "./assets/images/img2.jpg", "./assets/images/img3.jpg"];
+// var counter = 0;
 
-function imageChanger(){
+// function imageChanger(){
 
-    if (counter >= image.length){
-        counter = 0;
-    };
+//     if (counter >= image.length){
+//         counter = 0;
+//     };
 
-    body.style = `background-image: url(${image[counter]});`
-    // body.style.backgroundImage = `url(${image[counter]});`;
-    counter++;
+//     body.style = `background-image: url(${image[counter]});`
+//     counter++;
 
-    console.log(body.style.backgroundImage);
-};
-setInterval(imageChanger, 4000);
+//     console.log(body.style.backgroundImage);
+// };
+// setInterval(imageChanger, 4000);
+
+

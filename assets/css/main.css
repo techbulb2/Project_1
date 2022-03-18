@@ -1,12 +1,15 @@
 :root {
     --background-color-1: rgba(0, 0, 0, 0.075);
-    --background-color-2: rgba(255, 255, 255, 0.959);
+    --background-color-2: rgba(255, 255, 255, 0.87);
+    --background-color-3: rgb(207, 123, 38);
    
     --radius: 2rem;
     --radius-1: 1rem;
-    --color-1: rgb(170, 169, 169);
-    --color-2: grey;
-    --color-3: rgb(0, 255, 85);
+    --color-1: rgb(243, 240, 240);
+    --color-2: rgb(248, 184, 120);
+    --color-3: rgb(248, 135, 21);
+    
+    
 }
 
 
@@ -21,16 +24,22 @@ html {
 body {
     box-sizing: border-box;
     margin: 0;
-    background-image: url("../images/img1.jpg");
+    background-image: url("../images/img2.jpg");
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
+#drop {
+    padding-top: 2rem;
+    padding-bottom: 2.8rem;
+    background-color: rgba(205, 134, 63, 0.596);
+}
+
 .form-container {
     max-width: 40%;
-    margin: 5rem auto;
+    margin: 3rem auto;
     /* border: 1px solid grey; */
     padding: 2rem;
     background-color: var(--background-color-1);
@@ -48,24 +57,48 @@ h1 {
     color: var(--color-3);
 }
 
-input {
-    width: 100%;
-    height: 3rem;
-    position: relative;
+#submit {
+    text-transform: uppercase;
     padding: 2rem;
-    padding-left: 3rem;
-    font-size: 1.5rem;
+    padding-left: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    font-size: 2rem;
+    background-color: var(--background-color-3);
+
+    
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: var(--radius-1);
+    outline: none;
+    color: var(--color-1);
+
+    cursor: pointer;
+}
+
+.all {
+    width: 100%;
+    /* height: 4rem; */
+    position: relative;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    font-size: 2rem;
     margin-top: 1.5rem;
     border: none;
     border-radius: var(--radius-1);
     outline: none;
     color: var(--color-2);
+    background-color: var(--background-color-2);
 }
 
 i {
     position: absolute;
-    left: 15px;
-    padding-top: 15px;
+    left: 3rem;
+    padding-top: 3.5rem;
     font-size: 2rem;
-    color: rgb(199, 33, 33);
+    color: var(--color-2);
 }
+
