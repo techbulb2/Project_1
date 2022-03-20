@@ -162,6 +162,10 @@ a:focus {
     color: var(--color-5);
 }
 
+.error {
+    color: red;
+}
+
 .clearfix {
     display: block;
     clear: both;

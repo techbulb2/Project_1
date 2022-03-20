@@ -31,3 +31,25 @@
 // setInterval(imageChanger, 4000);
 
 
+const nameInput = document.querySelector("#firstname");
+const nameInput = document.querySelector("#lastname");
+const email = document.querySelector("#email");
+const password = document.querySelector("#password");
+const comfirmPassword = document.querySelector("#password");
+
+function validateForm(){
+
+    clearMessage();
+
+    if(nameInput.nodeValue.length < 1){
+        errorNodes[0].innerText = "Name cannot be blank";
+        nameInput.classList.add("error-border");
+    }
+}
+
+function clearMessage(){
+    for(let i = 0; i < errorNodes.length; i++){
+        errorNodes[i].innerText = "";
+    }
+    nameInput.className.remove("error-border");
+}
